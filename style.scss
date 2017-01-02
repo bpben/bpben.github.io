@@ -317,6 +317,10 @@ tbody tr:nth-child(odd) th {
         margin: 1rem 1rem 1rem;
         display: inline;
     }
+    h2 {
+        text-align: center;
+        color: #EE7600;
+    }
     h3 {
         height: auto;
         margin-right: 4vw;
@@ -367,6 +371,7 @@ tbody tr:nth-child(odd) th {
             position: absolute;
             bottom: 0;
             margin-left: 2vw;
+            color: #d1d1d1;
             a {
                 padding: 0;
                 margin-left: 0;

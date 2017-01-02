@@ -8,9 +8,7 @@ gravatar_hash:      ""
 twitter:            "bpben2"
 email:              "yksrotab@gmail.com"
 github:             "bpben"
-pinterest:          ""
-linkedin:           "https://www.linkedin.com/in/benjamin-batorsky-1b883b27"
-facebook:           ""
+linkedin:           "benjamin-batorsky-1b883b27"
 
 disqus_shortname:   ""
 
@@ -27,8 +25,6 @@ markdown:           kramdown
 nav:
   - name:           "About"
     href:           "/about"
-  - name:           "Download"
-    href:           "/releases"
 
 sass:
   style:            :compressed
