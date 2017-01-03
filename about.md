@@ -25,4 +25,5 @@ I have worked in scientific research for a decade in the areas of public health 
             <a type="button" href="http://linkedin.com/in/{{ site.linkedin }}">
                 <i class="fa fa-linkedin"></i>
             </a>
+			{% endif %}
 </ul>
