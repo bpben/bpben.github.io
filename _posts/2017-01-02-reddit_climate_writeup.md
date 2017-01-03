@@ -42,11 +42,11 @@ Ensure that the following packages are installed:
 ### <a name="actvol"></a>Activity volumes
 First, I looked descriptively at the submission volume for each subreddit:
 
-![](https://github.com/bpben/reddit_climate/figures/fig1_subvols.png)
+![](https://raw.githubusercontent.com/bpben/reddit_climate/master/figures/fig1_subvols.png)
 
 It appears that generally the climate subreddit has a higher volume of submission.  However, to really understand activity within a subreddit, it made sense to look at the conversation around each of these submissions.  To do that, I looked at comment volume for each subreddit, normalized by the number of submissions:
 
-![](https://github.com/bpben/reddit_climate/figures/fig2_comvols.png)
+![](https://raw.githubusercontent.com/bpben/reddit_climate/master/figures/fig2_comvols.png)
 
 Though the submission volume for the climate subreddit is higher, the comments per submission are roughly comparable.  This is interesting, as the climate subreddit has more unique users submissing and commenting.  The suggestion is that the smaller number of climateskeptics members are more active than the larger number of climate members.
 
@@ -61,7 +61,7 @@ For the climate subreddit, there are 574 unique members (i.e. users engaging in 
 It appears that climateskeptics engage with the subreddit through both comments and posts and do it with enough frequency that they match the per-submission comment amount of the climate subreddit, which has twice as many users.  This suggests that the climateskeptics subreddit has a lot more active, engaged members frequently discussing among themselves.  I wanted to look at this connectivity and see how, if at all, conversation was taking place across subreddits.  To do that, I plotted all instances of users interacting with one another across subreddits.  I used the Fructerman-Reingold force-directed algorithm (spring_layout in networkx) in order to have easy interpretability.
 
 _Figure 3: Network plot of redditor interactions_
-![](https://github.com/bpben/reddit_climate/figures/fig3_networkplot.png)
+![](https://raw.githubusercontent.com/bpben/reddit_climate/master/figures/fig3_networkplot.png)
 
 The red nodes indicate climateskeptics members, the blue climate members and the purple are members of both.  Networks are directed; lines are thicker in the direction of the interaction (i.e. thicker around the person being responded to).  Spring_layout attempts to minimize the number of overlapping lines/nodes for more interpretable layout.  The result is nodes that are more closely interconnected are plotted close to one another and those with fewer connections are plotted farther away from the core.
 
@@ -71,7 +71,7 @@ The two subreddits have little connectivity to one another, which is predictable
 In order to understand the quality of the conversation taking place in the two subreddits, I examined the polarity of the words being used in comments.  The polarity score is calculated using a dictionary of terms with each word scored as negtive or positive on a range of -1 to 1.  Each term is scored individually and the score of all the words together is summed to get the comment's polarity score.  Generally, this summed to zero, as one can see from the distribution plot below.
 
 _Figure 4: Polarity of comments by subreddit_
-<img src="https://github.com/bpben/reddit_climate/figures/fig4_polplot.png">
+![](https://raw.githubusercontent.com/bpben/reddit_climate/master/figures/fig4_polplot.png)
 
 The differences in polarity, overall, were not significant.  I also examined the polarity of comments that were voted at zero or below (i.e. those that users disliked) versus those that were voted above zero.  The distributions of positive-voted comments were roughly the same as the overall distribution, due to most of the comments in the data being positively-voted.  The distributions of negative-or-zero voted were different for the subreddits, but this is likely an artifact of the small number of zero and negative posts.  In order to clearly understand differences in the comments between subreddits, additional analysis would have to be done.
 
