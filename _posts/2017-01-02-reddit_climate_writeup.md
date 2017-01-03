@@ -70,8 +70,8 @@ The two subreddits have little connectivity to one another, which is predictable
 ### <a name="pol"></a>Polarity scores
 In order to understand the quality of the conversation taking place in the two subreddits, I examined the polarity of the words being used in comments.  The polarity score is calculated using a dictionary of terms with each word scored as negtive or positive on a range of -1 to 1.  Each term is scored individually and the score of all the words together is summed to get the comment's polarity score.  Generally, this summed to zero, as one can see from the distribution plot below.
 
-_Figure 4: Polarity of comments by subreddit _
-![](https://github.com/bpben/reddit_climate/figures/fig4_polplot.png)
+_Figure 4: Polarity of comments by subreddit_
+<img src="https://github.com/bpben/reddit_climate/figures/fig4_polplot.png">
 
 The differences in polarity, overall, were not significant.  I also examined the polarity of comments that were voted at zero or below (i.e. those that users disliked) versus those that were voted above zero.  The distributions of positive-voted comments were roughly the same as the overall distribution, due to most of the comments in the data being positively-voted.  The distributions of negative-or-zero voted were different for the subreddits, but this is likely an artifact of the small number of zero and negative posts.  In order to clearly understand differences in the comments between subreddits, additional analysis would have to be done.
 
