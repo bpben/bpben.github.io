@@ -1,6 +1,6 @@
 ---
 layout: post
-title: D4D traffick modelling hackathon.
+title: D4D traffic modelling hackathon.
 ---
 
 It's happening, people! The [Data 4 Democracy (with a little help from City of Boston) hackathon](https://www.eventbrite.com/e/data-for-democracy-hackathon-boston-tickets-33088552752?aff=es2).  If you're in the Boston area or a fan of the Boston area or, heck, if you just got nothing better to do on a Saturday, check it out.
