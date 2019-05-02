@@ -15,7 +15,7 @@ So here’s some of the course info, I’ll attach this to all my posts just to 
 
 In this lecture, [Andrew Ng](https://twitter.com/AndrewYNg) takes us through an overview of the course purpose and generally the promise of Deep Learning as he sees it.  He starts by specifying the use case for something like a Deep Learning model.  That is, it is most useful in circumstances with a large amount of data is available.
 
-![Data quantity relationship to model performance]({{site.url}}/assets/lecture1_img.png)
+![Data quantity relationship to model performance]({{site.url}}/assets/lecture1_img.png){:height="50%" width="50%"}
 
 It’s an important point.  I’ve definitely found that parametric or generally “shallow” approaches are comparable to neural nets in a lot of my small-data usecases.
 
