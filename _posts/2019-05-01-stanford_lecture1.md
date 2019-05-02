@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stanford CS230 summary: Lecture 1 - Introduction
+title: Stanford CS230 Lecture 1 - Introduction
 ---
 
 Hi folks! I’m going to start a series documenting my progress through the [Stanford CS230 course](http://cs230.stanford.edu/).  The course is meant to go alongside the Coursera [Deeplearning.ai](https://www.deeplearning.ai/) materials, but right now I’m going through the lectures from CS230.
