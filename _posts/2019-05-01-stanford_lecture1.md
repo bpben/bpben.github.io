@@ -24,14 +24,16 @@ These performance gains are pretty substantial.  He explains that the field of D
 The purpose of the course are, roughly, to give an overview of the field and the considerations of building Deep Learning models.  Additionally, the course aims to provide a sort of systematic way of thinking about building and implementing these models.  He goes on to explain why this is particularly important to think about by giving an anecdote from his own experience.
 
 He describes a shopping mall as not being an internet company just because it has a website from which people can purchase products.  Particularly, he points out three main differences:
-1) A shopping mall isn’t able to do A/B testing.  The mall itself is a standard experience and one that’s fairly difficult to change.  Particularly, it’s impossible to change the experience for some visitors and not for others.
-2) Relatedly, an internet company has short development cycles.  Changes to a shopping mall take a lot of time.  For a company like Amazon, they could implement a change overnight.
-3) Long development cycles for shopping malls mean that if every change has to be run by the CEO, that’s not really a problem.  For an internet company, most of the decisions on changes are made by engineers and product managers.
+
+1. A shopping mall isn’t able to do A/B testing.  The mall itself is a standard experience and one that’s fairly difficult to change.  Particularly, it’s impossible to change the experience for some visitors and not for others.
+2. Relatedly, an internet company has short development cycles.  Changes to a shopping mall take a lot of time.  For a company like Amazon, they could implement a change overnight.
+3. Long development cycles for shopping malls mean that if every change has to be run by the CEO, that’s not really a problem.  For an internet company, most of the decisions on changes are made by engineers and product managers.
 
 He explains that it follows that just because a company uses neural networks doesn’t mean it is an AI company.  That there are a lot of design differences that differentiate a company using Neural Networks from a company that has AI as part of its philosophy.  Particularly, he points out some differences:
-1) AI companies (like Google) tend to spend time and resources gaining data that will be useful to algorithms
-2) AI companies tend to have a unified data warehouse
-3) AI companies also are focused on opportunities for automation
+
+1. AI companies (like Google) tend to spend time and resources gaining data that will be useful to algorithms
+2. AI companies tend to have a unified data warehouse
+3. AI companies also are focused on opportunities for automation
 
 As I understood this comparison, Andrew is pointing out that it’s not enough to just be plopping a model down into a problem.  To effectively leverage the promise of AI, companies need to see the whole picture.  That means thinking about the data feeding a model and where the outputs of that model fit into the general process of the company.
 

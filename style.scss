@@ -106,9 +106,13 @@ ul {
     }
     ul,
     ol {
-        margin-top: .25rem;
+        padding-left: .25rem;
         margin-bottom: .5rem;
     }
+}
+
+ul, li {
+  padding: 0px 25px;
 }
 
 ol {
@@ -339,6 +343,9 @@ tbody tr:nth-child(odd) th {
         margin-left: 25vw;
         height: auto;
         width: 100%;
+        ul, li {
+         padding: 0px;
+        }
     }
     @media (min-width: 38em) {
         position: fixed;
