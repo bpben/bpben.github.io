@@ -10,6 +10,7 @@ So here I’ll do my last summary from the CS230 lectures (for now) and next tim
 This lecture is a bit different.  We hear from a practitioner in the field, particularly one working to apply AI technology in healthcare.  Stanford PhD Candidate [Pranav Rajpurkar](https://twitter.com/pranavrajpurkar) takes us through some healthcare applications he’s worked on and [Kian Katanforoosh](https://twitter.com/kiankatan?lang=en) picks up with a more in-depth technical dive.  Again, all materials below are from the lecture unless otherwise noted.
 
 [Video](https://www.youtube.com/embed/IM9ANAbufYM)
+
 [Slides](https://cs230.stanford.edu/spring2019/cs230_lecture6.pdf)
 
 Pranav starts off with some of the high-level questions asked of AI in the healthcare field:
