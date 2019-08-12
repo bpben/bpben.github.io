@@ -6,6 +6,7 @@ title: Entity-Linking in spaCy
 Annnnd we’re back with more overviews of talks from the [spaCy IRL conference](https://irl.spacy.io/2019/).  This time [Sofie Van Landeghem](https://twitter.com/OxyKodit) takes us through the work-in-progress Entity-Linking model in spaCy.
 
 [Video](https://www.youtube.com/watch?v=PW3RJM8tDGo&t=2s_)
+
 [Slides](https://drive.google.com/file/d/1EuGxcQLcXvjjkZ-KRUlwpr_doBVyEBEG/view)
 
 So you may have heard of [Named-Entity Recognition](https://spacy.io/usage/linguistic-features#named-entities) (NER), where a model is trained to identify “real-world” object in text (e.g. people, places, companies).  That’s all well and good, but what if multiple entities have the same name? Sofie gives the example of Lord Byron, Lady Byron and Ada Lovelace (their daughter).  One text may refer to any one of them as “Byron”.  The NER model might be able to identify that Byron is a named entity, but identifying WHICH Byron is a whole different story.  And model.
