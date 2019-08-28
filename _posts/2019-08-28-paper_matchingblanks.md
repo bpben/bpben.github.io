@@ -1,53 +1,46 @@
 ---
 layout: post
-title: Transfer Learning in Open-source NLP
+title: Matching the Blanks\: Distributional Similarity for Relation Learning
 ---
 
-As I mentioned last time, I’m going to start digging into some topics of interest to me and put together my notes in blog form.  My main purpose here is to keep an inventory of the topics I research, but I hope these posts are useful to others.  I’d also be eager to discuss some of this with anyone interested in talking more.
+I heard from a colleague about this paper recently and thought it was really interesting and relevant to some of the work I’m doing.  I figure I’ll aim to do a paper summary here every so often to mix it up from conference presentations.  So let’s dive right in.
 
-I first intend to pick a few talks from the recent [spaCy IRL conference](https://irl.spacy.io/2019/) that took place in July and summarize some of the key points.  This week I start with [Sebastian Ruder](http://ruder.io/) from DeepMind and his exploration of Transfer Learning.  Let’s go!
+Soares, L.B., FitzGerald, N., Ling, J. and Kwiatkowski, T., 2019. Matching the Blanks: Distributional Similarity for Relation Learning. arXiv preprint arXiv:1906.03158.
 
-[Video](https://www.youtube.com/watch?v=hNPwRPg9BrQ)
+[arXiv link](https://arxiv.org/abs/1906.03158)
 
-Just a quick background: Sebastian is an excellent writer and expert on the subject of NLP.  I’ve read several of [his articles giving overviews of important NLP-related conferences](http://ruder.io/naacl2019/) and been really impressed by the level of detail.  He’s also covered Transfer Learning in NLP before at NAACL and his tutorial slides are [here](https://docs.google.com/presentation/d/1fIhGikFPnb7G5kr58OvYC3GN4io7MznnM0aAgadvJfc/edit).
+One-liner: The authors used BERT in a supervised and unsupervised way to identify the relation between entities, outperforming the state of the art in this task even without using data labelled with relationship type.
 
-Transfer learning, as Sebastian defines it, is where you borrow learnings from task A (e.g. identifying the language used in text to bring to task B (e.g. classifying whether text is positive or negative).  This is particularly relevant for NLP as language has a shared structure.  That is, even if a text corpus comes from a different source, it’s still likely to adhere to a similar structure (e.g. a sentence is likely to have nouns, verbs, etc).  It’s also particularly useful to use transfer learning as finding labelled datasets is one of the key limitations of Machine Learning generally.
+Relation learning is essentially trying to extract the relationship between entities in text.  A lot of work here tends to rely on predefined mappings or on large knowledge network datasets.  The authors here investigated methods to extract the relationship without these dependencies.  There are two parts to this paper as I read it, a “supervised approach” and an “unsupervised approach”.  An overview visualization is below:
 
-Sebastian presents the following visual to outline the different branches of transfer learning:
+![Supervised and unsupervised approaches]({{site.url}}/assets/paper/matchingblanks_1.png){:height="50%" width="50%"}
 
-![Types of transfer learning]({{site.url}}/assets/spacyirl/transfer_1.png){:height="50%" width="50%"}
+The first part of the paper focuses on what I’m calling a “supervised approach”, as it uses a labelled set of relationship types (e.g. capital cities, authorship).  In this approach, Soares et al use the deep transformer architecture [BERT](https://arxiv.org/abs/1810.04805) to create fixed-length representations of relationship information.  They use three different methods for creating a training dataset along with three methods for extracting the fixed-length representation
 
-So in terms of tasks, let’s think about classifying positive or negative sentiment.  If you’re taking a model trained on sentiment classification from one domain (e.g. Movie reviews) and applying it to another (e.g. A selection of Tweets), that would fall under Domain Adaptation.  If you’re instead taking that sentiment model that has been trained on English text and adapting it to French, you’re in the area of Cross-Lingual learning.
+Dataset creation
+1.  Standard input: Data as-is, meaning just the statement about the entities and their relation.  Some formatting is performed to fit with BERT’s expected input
+2. Positional embeddings: An additional element is added to the data to indicate which word pieces indicate which entity (i.e. either entity 1 or entity 2)
+3. Entity marker tokens: Data is augmented with special “start” and “end” tags at the beginning and end of each entity
 
-Now, say you’re using that same sentiment classification model, but you’re going to use it (or some part of it) for language identification.  These are different tasks, so they belong in the lower branch of the diagram.  If you’re training both of these models simultaneously and somehow connecting learnings from each as part of the training (e.g. general language structure), you’re dealing with Multi-task learning.  If you’re training the sentiment model and then using some part of that to then apply to the language identification task, you’re dealing with Sequential transfer learning.  
+Fixed-length representation
+1. \[CLS\] token: For BERT inputs, statements begin with a special “\[CLS\]” token.  This token can be used as a sort of representation of the entire statement.  By extracting the hidden state of the BERT model at this token, the authors get their representation.
+2. Mention pooling: The representation is a concatenation of the maxpooled hidden state of each of the entities.  
+3. Entity start state: The representation is the concatenation of the hidden state of the entity “start” token.  This method can only be used with dataset 3 above.
 
-Sebastian focuses on Sequential transfer learning for the rest of the talk, which deals with things like word2vec and BERT.
+This adds up to six different formulations of the training data and representations.  For each, a fully-connected network was trained to predict the relationship type based on the representation.  The best performing formulation was the entity start state (representation 3) with entity start tokens (dataset 3), which outperformed the state of the art (SOA) on several tasks.  
 
-In this domain of sequential transfer learning, Sebastian outlines five major:
-Words to words-in-context
-Word vectors -> sentence/doc vectors -> word-in-context vectors (words in different context, different representation
-Language model pretraining
-Predict next word given the context
-In this case, you don’t need labelled/annotated text, it’s self-supervised
-This works because with enough data and a large enough model, it becomes possible to compress essentially any context into a generalized vector
-Pretraining vs target task
-In choosing the pretraining method, you want to ensure there’s going to be some similarity between it and the target task
-For example, doing sentence/document-level representations as pretraining for a word level prediction task probably doesn’t make sense
-Shallow to deep 
-Generally, there’s been a move towards adding more layers to these neural models as this tends to result in performance gains
-However, this also leads to hugely expensive training processes
+The paper then moves into what I’m calling the “unsupervised task”.  This is where the “matching the blanks” title comes into play.  The idea here is that the BERT model outputs a representation that likely contains some information about the relationship between entities.  What is needed is some kind of objective function that extracts this information in a way that similar relationships will have a similar “relationship vector” and dissimilar ones will have less similar vectors.
 
-Regarding that last point, Sebastian takes some time to talk about the options available to access pretrained models and thus save yourself the headache (and time!) of training your own.  He mentions several categories of resources and examples:
-Hubs: TensorFlow Hub, PyTorch Hub
-Author-related checkpoints: BERT, GPT
-Third-party libraries: AllenNLP, fast.ai, HuggingFace
-Where Hubs are very easy to access and implement, they give you limited access to the model internals.  On the other hand, checkpoints give you more access, but are harder to implement.
+The dataset, in this case, consists of a set of paired entities and the relation statement between them (i.e. the text of the statement itself and the start identifiers for each entity).  Some smart sampling is used to ensure no pair of entities is particularly over-represented and that there are sufficient examples for any given entity that relationships between that entity and others can be extracted.
 
-Sebastian concludes the talk with some future directions for transfer learning.  Many of the existing language models depend on the task of predicting the next word, but this doesn’t necessarily work well in summarization tasks, where there is a bunch of information from previous paragraphs/sentences that needs to be considered.  
+The blanks are used, as I understand it, because the objective function the authors designed could potentially just learn the function that created the underlying dataset.  Basically, the function could be perfectly minimized by learning which relation statements are exactly the same and which are not the same.  But this doesn’t mean the model learns anything about relationships.  So the authors replace the entity tokens with a “blank” token with some probability.  This thereby breaks the link between specific entities and their relation statement and forces the model to use contextual information to learn whether a relationship is the same or different.
 
-Additionally, many models do this prediction from left to right, which works well in English, but in languages like Chinese or in use-cases where the context to the right is important, that information is not being utilized effectively.  Sebastian mentions that NLP might learn from the image domain, where models may be trained by being given a “patch” of an image and being asked to predict the rest.  This would also move models to away from being limited to just next-word prediction.
+I know that explanation is a bit convoluted.  I think some examination of the function would help.  Personally, I struggled a bit to understand exactly why the blanks came in here.  If people have some better way to understand this, get in touch! 
 
-Finally, there is limited use of semantic information in some of these models, as they’ve become very focused on this next-word prediction task.  Sebastian advocates for thinking about how distances between words changes their relationship and how to incorporate this type of semantic information in models.
+To compare the result from the model with the SOA and the supervised model, the authors basically use the distance between relationship vectors, ranking the candidate relationship vectors by their closeness to the target relationship vector.  For example, in the FewRel dataset, there are examplar statements of the “capital” relationship like “Trenton is the capital of New Jersey”.  The relationship vector for this relationship should be closer to other “capital” relationships versus non-capital relationships.  I’m a bit confused how they choose a distance cut-off here, but likely a closer reading would help me understand.
 
+The unsupervised approach outperforms the SOA as well as the supervised model in a pretty astonishing way.  It also appears to outperform human labelling in some tasks.
 
+This is a pretty exciting result and a fascinating method.  It’s something I definitely want to try out for myself.  Maybe another blog post? We’ll see!
 
+Let me know if you have any questions or some better way of explaining the use of the “blanks” in the statements or the comparison with the SOA.  Or anything else :)
