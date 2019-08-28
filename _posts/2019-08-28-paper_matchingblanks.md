@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Matching the Blanks\: Distributional Similarity for Relation Learning
+title: Matching the Blanks&#58; Distributional Similarity for Relation Learning
 ---
 
 I heard from a colleague about this paper recently and thought it was really interesting and relevant to some of the work I’m doing.  I figure I’ll aim to do a paper summary here every so often to mix it up from conference presentations.  So let’s dive right in.
