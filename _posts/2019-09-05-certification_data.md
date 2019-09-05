@@ -9,10 +9,10 @@ Something a little different this week.  I’m working with some colleagues on a
 
 There’s a readme in the github, but I’ll give a bit of detail here.  The data contain all the certified brand of four major sustainability certifications (based on the certification websites).  They’re in JSON format, keyed by the URL with the category name and list of brands.  The certifications are:
 
-[Fair Trade Certified](https://www.fairtradecertified.org)
-[Biodegradable Products Institute](https://www.bpiworld.org)
-[Greenseal](https://greenseal.org)
-[Safer Choice](https://www.epa.gov/saferchoice)
+* [Fair Trade Certified](https://www.fairtradecertified.org)
+* [Biodegradable Products Institute](https://www.bpiworld.org)
+* [Greenseal](https://greenseal.org)
+* [Safer Choice](https://www.epa.gov/saferchoice)
 
 ### What is a certification?
 It’s always good to start with a definition.  [This article](https://www.annualreviews.org/doi/full/10.1146/annurev-environ-102017-025931) in the Annual Review of Environment and Resources uses the term “Voluntary Sustainability Standards” and defines them as:
