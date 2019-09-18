@@ -33,9 +33,9 @@ If my engineering experience hasn’t led me wrong, the best place to start is w
 
 * `use_test`: This option uses the test dataset to measure performance.  This is generally what you want to do when you’re looking at the final performance of your model (rather than running experiments).
 * `batch_size`: Batch size is how much data are used with each step of each epoch.  There’s [some considerations](https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/) to take here, but these apply to essentially any gradient-based learning algorithm.
-*`learn_rate`: Again, a typical parameter, which governs how much “information” each step of the training process gains from any given batch. 
-*`max_wpb`: The maximum number of words in any given batch.  One of the features of the wrapper is a process for standardizing the size of inputs to the model for consistency and reduced memory footprint.  This parameter relates to that process, governing how many words are included in any particular round of updates to the model.
-*`pos_label`: The positive class label.  Set this if you want to specify what is considered the “positive class”.  By default, it’s the first label in the dataset.  In this example, it’s set to “Positive”.  Careful about “first label” here, if you, for example, sort the classes “Positive” and “Negative” here, the positive class would be “negative” since, alphabetically, “n” comes before ”p”.
+* `learn_rate`: Again, a typical parameter, which governs how much “information” each step of the training process gains from any given batch. 
+* `max_wpb`: The maximum number of words in any given batch.  One of the features of the wrapper is a process for standardizing the size of inputs to the model for consistency and reduced memory footprint.  This parameter relates to that process, governing how many words are included in any particular round of updates to the model.
+* `pos_label`: The positive class label.  Set this if you want to specify what is considered the “positive class”.  By default, it’s the first label in the dataset.  In this example, it’s set to “Positive”.  Careful about “first label” here, if you, for example, sort the classes “Positive” and “Negative” here, the positive class would be “negative” since, alphabetically, “n” comes before ”p”.
 
 ```
 nlp = spacy.load(model)
