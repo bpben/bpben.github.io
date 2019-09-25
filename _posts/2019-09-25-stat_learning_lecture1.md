@@ -19,11 +19,11 @@ $$ \ell $$ is the loss, and $$ P(x,y) $$ is the joint probability.  The joint pr
 
 ![Joint probability]({{site.url}}/assets/stat_learning/lecture1_3.png){:height="50%" width="50%"}
 
-This is generally true for joint probabilities.  In this case, $P_x(x)$ is the sampling distribution (how X is distributed) and $P(y|x)$ takes into account the relationship between the outcome and the data.  The slides have some nice visuals of how differences in these characteristics can really alter how the data look.
+This is generally true for joint probabilities.  In this case, $$ P_x(x) $$ is the sampling distribution (how X is distributed) and $$ P(y|x) $$ takes into account the relationship between the outcome and the data.  The slides have some nice visuals of how differences in these characteristics can really alter how the data look.
 
 The loss function has been [covered better](https://towardsdatascience.com/understanding-the-3-most-common-loss-functions-for-machine-learning-regression-23e0ef3e14d3) by other people, so I’ll leave that to them.  Basically, it’s the cost of using the learning function’s output rather than the actual output.
 
-So how do we choose the right learning function? This is essentially the “learning process” in machien learning;  pick a set of functions of a certain class (e.g. a linear regression $y = mx + b$) and use some algorithm to explore the space of that class of functions to find the function that minimizes the expected risk.  For example, in OLS regression we’re finding the weight values that minimize the sum of the squared difference between the predicted value and the actual value.  
+So how do we choose the right learning function? This is essentially the “learning process” in machien learning;  pick a set of functions of a certain class (e.g. a linear regression $$ y = mx + b $$) and use some algorithm to explore the space of that class of functions to find the function that minimizes the expected risk.  For example, in OLS regression we’re finding the weight values that minimize the sum of the squared difference between the predicted value and the actual value.  
 
 The pieces I struggle with are going from loss functions to risk and from risk to expected risk.  Maybe I’ll investigate these further in a future blog post.  But for now, my intuition is that minimization of the expected risk is our target because we:
 
