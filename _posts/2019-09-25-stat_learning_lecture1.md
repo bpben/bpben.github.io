@@ -15,7 +15,7 @@ Recently I started attending a class at MIT on Statistical Learning Theory and A
 
 ![Risk broken down]({{site.url}}/assets/stat_learning/lecture1_2.png){:height="50%" width="50%"}
 
-$\ell$ is the loss, and $P(x,y)$ is the joint probability.  The joint probability accounts for the noise/stochasticity in the learning problem.  This joint probability has two components:
+$$ \ell $$ is the loss, and $$ P(x,y) $$ is the joint probability.  The joint probability accounts for the noise/stochasticity in the learning problem.  This joint probability has two components:
 
 ![Joint probability]({{site.url}}/assets/stat_learning/lecture1_3.png){:height="50%" width="50%"}
 
