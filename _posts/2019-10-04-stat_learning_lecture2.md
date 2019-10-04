@@ -13,7 +13,7 @@ In the [last class](https://bpben.github.io/2019/09/25/stat_learning_lecture1/),
 
 This shouldn’t look too strange to anyone who’s worked with OLS regressions before.  Neither should the equation for finding the minimizer of $$ w $$:
 
-![Risk]({{site.url}}/assets/stat_learning/lecture2_2.png){:height="50%" width="50%"}
+![Risk]({{site.url}}/assets/stat_learning/lecture2_3.png){:height="50%" width="50%"}
 
 I don’t feel equipped to derive this right now, but check out [this source](http://statweb.stanford.edu/~owen/courses/305-1415/ch2.pdf) for a good walkthrough of getting to this point (and beyond).
 
