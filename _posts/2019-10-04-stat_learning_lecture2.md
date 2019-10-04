@@ -17,7 +17,7 @@ This shouldn’t look too strange to anyone who’s worked with OLS regressions 
 
 I don’t feel equipped to derive this right now, but check out [this source](http://statweb.stanford.edu/~owen/courses/305-1415/ch2.pdf) for a good walkthrough of getting to this point (and beyond).
 
-The first part of this minimizer (everything except the $$ \hat{Y} $$) is called the [pseudoinverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse).  The only reason I mention this is because after some magic, Lorenzo incorporates the [Singular Value Decomposition (SVD)](https://en.wikipedia.org/wiki/Singular_value_decomposition) of $$ X $$ to go from $$ w $$ to the pseudoinverse of $$ w $$ ($$ w_dagger $$).  
+The first part of this minimizer (everything except the $$ \hat{Y} $$) is called the [pseudoinverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse).  The only reason I mention this is because after some magic, Lorenzo incorporates the [Singular Value Decomposition (SVD)](https://en.wikipedia.org/wiki/Singular_value_decomposition) of $$ X $$ to go from $$ w $$ to the pseudoinverse of $$ w $$ ($$ \hat{w}^\dagger $$).  
 
 ![Risk]({{site.url}}/assets/stat_learning/lecture2_3.png){:height="50%" width="50%"}
 
@@ -35,7 +35,7 @@ Note the lambda, which corresponds to the regularization strength.  With lambda 
 
 ![Risk]({{site.url}}/assets/stat_learning/lecture2_5.png){:height="50%" width="50%"}
 
-In this case, you can see how when s is greater than lambda, we get back to our original SVD formulation.  When lambda is greater than s, then the first term becomes 1/lambda, which will shrink the size of “w”.  So, for components that are more “important”, the weights are mostly unaffected by lambda, but for components that aren’t very important, lambda will shrink them.
+In this case, you can see how when s is greater than lambda, we get back to our original SVD formulation.  When lambda is greater than s, then the first term becomes 1/lambda, which will shrink the size of $$ w $$.  So, for components that are more “important”, the weights are mostly unaffected by lambda, but for components that aren’t very important, lambda will shrink them.
 
 I find this idea a really neat, intuitive explanation of how regularization works, mathematically.  We’ll be revisiting this in later lectures, but I thought it was important to tease this out as the main point of this lecture.
 
