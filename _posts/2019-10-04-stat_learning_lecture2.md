@@ -9,17 +9,17 @@ So we're back with more Statistical Learning.  In this class, we introduce the i
 
 In the [last class](https://bpben.github.io/2019/09/25/stat_learning_lecture1/), [Lorenzo](https://cbmm.mit.edu/about/people/rosasco) made reference to how OLS regression is basically a learning algorithm to explore the space of possible linear functions that may minimize the “risk” of using a model’s prediction ($$ \hat{Y} $$) versus the actual value.  With OLS, risk minimization looks like this:
 
-![Risk]({{site.url}}/assets/stat_learning/lecture2_1.png){:height="50%" width="50%"}
+![ERM for LS]({{site.url}}/assets/stat_learning/lecture2_1.png){:height="50%" width="50%"}
 
 This shouldn’t look too strange to anyone who’s worked with OLS regressions before.  Neither should the equation for finding the minimizer of $$ w $$:
 
-![Risk]({{site.url}}/assets/stat_learning/lecture2_3.png){:height="50%" width="50%"}
+![Minimizer of w]({{site.url}}/assets/stat_learning/lecture2_3.png){:height="25%" width="25%"}
 
 I don’t feel equipped to derive this right now, but check out [this source](http://statweb.stanford.edu/~owen/courses/305-1415/ch2.pdf) for a good walkthrough of getting to this point (and beyond).
 
 The first part of this minimizer (everything except the $$ \hat{Y} $$) is called the [pseudoinverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse).  The only reason I mention this is because after some magic, Lorenzo incorporates the [Singular Value Decomposition (SVD)](https://en.wikipedia.org/wiki/Singular_value_decomposition) of $$ X $$ to go from $$ w $$ to the pseudoinverse of $$ w $$ ($$ \hat{w}^\dagger $$).  
 
-![Risk]({{site.url}}/assets/stat_learning/lecture2_3.png){:height="50%" width="50%"}
+![Psuedoinverse of w]({{site.url}}/assets/stat_learning/lecture2_3.png){:height="25%" width="25%"}
 
 Brief aside on SVD: Basically you’re decomposing the matrix X into three matrices, U, S and V, which capture how the data are aligned in space.  S, in this case, is the singular values, and captures what could be considered the “importance” of a particular vector (from U or V) in the decomposition.  
 
