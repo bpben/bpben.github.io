@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Terraform tutorials: Set up with GCP
+title: Terraform tutorials - Set up with GCP
 ---
 
 Something a little different here.  I’ve found that I often am setting up a lot of infrastructure to serve applications and models and usually my approach is a bit ad-hoc.  I have some templates for making [Flask](https://www.palletsprojects.com/p/flask/) applications, but spinning up VMs and serving these apps is an exercise in what might be generously referred to as engineering (less generously: frantically scouring my history for StackOverflow articles).
