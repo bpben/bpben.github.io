@@ -25,9 +25,9 @@ This is typically called "instruction fine-tuning", since you're fine-tuning the
 
 So since the FLAN model understands instructions, we can basically rely on it for everything now.  I wonder if I can ask it for medical advice?
 
-| ![FLAN is a medical expert]({{site.url}}/assets/llms/align_flan.png){:height="30%" width="30%"} |
+| ![FLAN is a medical expert]({{site.url}}/assets/llms/align_flan.png){:height="20%" width="20%"} |
 |-------------------------------------------------------------------------------------------------| 
-| FLAN is a medical expert [source](https://huggingface.co/google/flan-t5-base)  |
+| FLAN is a medical expert [source](https://huggingface.co/google/flan-t5-base)                   |
 
 That's great, seems like ChatGPT isn't so confident.
 
@@ -47,7 +47,7 @@ This is the motivation behind the second innovation that brought us from the pre
 
 The term alignment comes from a [general discussion](https://arxiv.org/abs/1606.06565) about designing AI in accordance with human values.  It's not exactly a [new concern](https://timeline.com/robots-have-been-about-to-take-all-the-jobs-for-more-than-200-years-5c9c08a2f41d)
 
-| ![Hi there]({{site.url}}/assets/llms/friend_terminator.png){:height="30%" width="30%"} |
+| ![Hi there]({{site.url}}/assets/llms/friend_terminator.png){:height="10%" width="10%"} |
 |----------------------------------------------------------------------------------------| 
 | Hi Skynet!                                                                             |
 
@@ -80,7 +80,7 @@ This new era of NLP has been kind of insane.  I have an old presentation where I
 
 And now it looks like this:
 
-| ![Transformer timeline. On the vertical axis, number of parameters. Colors describe Transformer family]({{site.url}}/assets/llms/llm_timeline.png){:height="70%" width="70%"} |
+| ![Transformer timeline. On the vertical axis, number of parameters. Colors describe Transformer family]({{site.url}}/assets/llms/llm_timeline.png){:height="60%" width="60%"} |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
 | Transformer timeline. On the vertical axis, number of parameters. Colors describe Transformer family [source](https://arxiv.org/abs/2302.07730)                               | 
 
