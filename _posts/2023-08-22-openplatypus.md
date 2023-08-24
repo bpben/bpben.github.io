@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Platypus - Quick\, Cheap\, and Powerful Refinement of LLMs
+title: Platypus - Quick, Cheap, and Powerful Refinement of LLMs
 ---
 
 Hi all! In the interest of keeping up with the latest and greatest in LLMs, I've been collecting some articles and will hopefully have time to work through each.  Typically my process is to take notes as I read a paper and then summarize as a blog post.  I decided to take a page from...basically everyone else's book and start using ChatGPT to help me out here.
