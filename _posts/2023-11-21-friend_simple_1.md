@@ -81,7 +81,7 @@ This is all very simplified, but I find it useful to start from the basics and b
 ### SimpleBot
 What does this all mean? I think the best way to explain is with an actual in-code example.  To end this post, I want to build the simplest "working" example.  Since I'll be demoing a lot of this to the ODSC audience, I wanted to see if I could make something that is minimal, free, and shareable.  So this simplest example will be a short Google Collaboratory notebook, requiring no(!) GPU.  The model we'll be using will be...somewhat stupid, but it's code that can be easily edited to use a more sophisticated model.  The purpose here is to get something that sets up the initial workflow and demonstrates the utility of a "memory" mechanism.
 
-The notebook is [here]().
+The notebook is [here](https://colab.research.google.com/drive/1NjucFD1CiQiQlyHUDvt9KOBnU_iKSyLi?usp=sharing).
 
 So how does this fit into the framework I set up above?
 
