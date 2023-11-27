@@ -6,8 +6,8 @@ title: Building with LLMs Part 1 - Coding from scratch
 Good news everyone! I'm going to be presenting again at ODSC East! This time I'm going to shift focus and really dig into Large Language Models (LLMs).  Partly because everyone else is doing it and partly because I need a good motivator to really get myself familiar with the actual standing up of these systems.
 
 In this post, I want to accomplish a couple things:
-1) Establish a rough framework for a "conversational LLM application"
-2) Build a minimal version this application
+1. Establish a rough framework for a "conversational LLM application"
+2. Build a minimal version this application
 
 In later posts, I plan on expanding on this application using the wide variety of open and closed-source tools out there.  In this way, I'm aiming not only get familiar with these tools, but also get a sense of where they fit in to the development of applications.
 
@@ -21,8 +21,8 @@ Gosh, isn't this real philosophy here.
 
 [Definitions of applications](https://en.wikipedia.org/wiki/Application_software) are pretty unsatisfying here.  Generally, anything that isn't just a computer's internal goings-on is an application.  I'm going to make a lot of developers angry and say, simply, that an application has two components:
 
-1) Frontend - This is the user interface; everything the user sees and is able to interact with
-2) Backend - This is what carries out all the business of the application.
+1. Frontend - This is the user interface; everything the user sees and is able to interact with
+2. Backend - This is what carries out all the business of the application.
 
 Think of the browser you're using right now.  Depending on which one you use, you can click the back button to go back a page, enter a new url, scroll, etc.  That's the interface, it receives your input.  Now that input is translated, within the application, to some behavior via developer magic that, honestly, I don't even fully understand.  From input, to output.
 
