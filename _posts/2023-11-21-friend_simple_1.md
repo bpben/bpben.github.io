@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building with LLMs Part 1 - Coding from scratch
+title: LLM Apps Part 1 - Coding from scratch
 ---
 
 Good news everyone! I'm going to be presenting again at ODSC East! This time I'm going to shift focus and really dig into Large Language Models (LLMs).  Partly because everyone else is doing it and partly because I need a good motivator to really get myself familiar with the actual standing up of these systems.
@@ -88,6 +88,7 @@ So how does this fit into the framework I set up above?
 - Frontend - Collab notebook with a "raw_input" function
 - Input processor - Transformers implementation of the model tokenizer
 - Model - Meta's OPT model, available on HuggingFace Hub and served via transformers library
+- Memory - Stored as string, appended to input
 - Output processor - Transformers de-tokenization
 
 This works! Sort of.  But it requires a bunch of hacking around in a notebook and with our collaboratory instance.  In the next posts, we'll build on this example, using some other LLM development technology to abstract away some components and enable us to build functionality onto our bot.  
