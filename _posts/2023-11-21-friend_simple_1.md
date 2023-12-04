@@ -33,7 +33,7 @@ Groans and sighs from the audience as I answer: The LLM.
 
 In my view, an LLM application is similar to any other AI application in that there's a model that needs to be fit into the workflow.  That means the application needs to make the user play nice with the model and vice versa.  If we want to get philosophical, it's input/output pairs all the way down, but to abstract a bit, let's say the LLM application has a few components:
 
-- Frontend - Similar to any other application
+- Frontend - The user interface, as with other applications
 - Input processor - Translate the user interaction into model input
 - Model - In this case, the LLM itself or whatever service is hosting the LLM (e.g. OpenAI)
 - Output processor - From model to user
