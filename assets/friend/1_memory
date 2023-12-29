@@ -1,0 +1,16 @@
+digraph Workflow {
+	graph [size=10.5]
+	User
+	LLM
+	Memory
+	front [label=Frontend]
+	input [label="Input Processing" shape=diamond]
+	output [label="Output Processing" shape=diamond]
+	User -> front [label=1]
+	front -> input [label=2]
+	Memory -> input [label=3]
+	input -> LLM [label=4]
+	LLM -> output [label=5]
+	output -> Memory [label=6]
+	output -> front [label=7]
+}

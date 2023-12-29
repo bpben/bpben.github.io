@@ -1,0 +1,13 @@
+digraph Workflow {
+	graph [rankdir=TB]
+	User
+	LLM
+	front [label=Frontend]
+	input [label="Input Processing" shape=diamond]
+	output [label="Output Processing" shape=diamond]
+	User -> front [label=1]
+	front -> input [label=2]
+	input -> LLM [label=3]
+	LLM -> output [label=4]
+	output -> front [label=5]
+}
