@@ -98,21 +98,17 @@ dd {
 }
 
 ul {
-    display: inline;
     list-style: inside circle;
     padding-left: 0;
     li {
         margin-bottom: .25rem;
+        margin-left: .25rem;
     }
     ul,
     ol {
         padding-left: .25rem;
         margin-bottom: .5rem;
     }
-}
-
-ul, li {
-  padding: 0px 25px;
 }
 
 ol {
