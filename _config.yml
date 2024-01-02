@@ -1,14 +1,8 @@
 name:               "Ben Batorsky"
 description:        "Data Scientist and nice guy"
-
-url:                ""
 author:             "bpben"
-email:              "yksrotab@gmail.com"
-gravatar_hash:      ""
 twitter:            "bpben2"
-email:              "yksrotab@gmail.com"
-github:             "bpben"
-linkedin:           "benjamin-batorsky-1b883b27"
+email:              "benbatorsky@gmail.com"
 
 disqus_shortname:   ""
 
@@ -38,21 +32,18 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    sal:
-      name:           Sal
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
-
-    jane:
-      name:           Jane
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar2.jpg
-      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
-      email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+    ben:
+      name:           Ben
+      site:           https://www.benbatorsky.com
+      avatar:         me.png
+      bio:            "I am the type of person who appreciates the telling of a great story.  
+      As a data scientist, I am interested in using AI to understand, explore and communicate across borders and boundaries.  
+      My focus is on Natural Language Processing and the amazing ways it can help us understand each other and our world.  
+      The material on this blog is meant to share my experiences and understandings of complex technologies in a simple way, focused on application."
+      email:          benbatorsky@gmail.com
+      twitter:        https://twitter.com/bpben2
+      github:             http://github.com/bpben
+      linkedin:           http://linkedin.com/in/benjamin-batorsky-1b883b27
  
 # Defaults
 defaults:
@@ -62,8 +53,8 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
+      author: ben
+      avatar: me.png
       
   # all pages
   - scope:
