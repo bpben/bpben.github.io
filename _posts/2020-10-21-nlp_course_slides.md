@@ -1,6 +1,8 @@
 ---
 layout: post
 title: NLP course slides
+author: ben
+categories: [ NLP Course, NLP, tutorials]
 ---
 
 Whew, a bit of a delay here, kind of a crazy time (for everyone, I'm sure).

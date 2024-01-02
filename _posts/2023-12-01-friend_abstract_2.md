@@ -2,7 +2,7 @@
 layout: post
 title: LLM Apps Part 2 - Ollama, LlamaBot and Oobabooga - Oh my!
 author: ben
-categories: [ LLM App Series, LLM ]
+categories: [ LLM App Series, LLM, tutorials ]
 image: assets/images/20231201.png
 tags: [featured]
 ---

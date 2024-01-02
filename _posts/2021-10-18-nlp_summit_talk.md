@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Bias and Ethics in NLP Talk
+author: ben
+categories: [ ethics, NLP, talks ]
 ---
 
 Still working on getting more content up here, but thought in the meantime I'd share a talk I gave at the Spark NLP Summit earlier this month.

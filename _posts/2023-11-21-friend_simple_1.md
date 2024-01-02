@@ -2,7 +2,7 @@
 layout: post
 title: LLM Apps Part 1 - Coding from scratch
 author: ben
-categories: [ LLM App Series, LLM ]
+categories: [ LLM App Series, LLM, tutorials ]
 image: assets/images/20231121.png
 tags: [featured]
 ---
