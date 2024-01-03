@@ -43,9 +43,7 @@ Check out this [notebook](https://colab.research.google.com/drive/1s0pyZN1-TYNzr
 
 To save you some time, here's what the conversation we were having before looks like:
 
-| ![Ollama chatbot]({{site.url}}/assets/friend/2_ollama.png){:height="50%" width="50%"} |
-|--------------------------------------------------------------------------------------------------------------------------| 
-| Ollama chatbot   
+[![Ollama chatbot]({{site.url}}/assets/friend/2_ollama.png){:height="50%" width="50%"}]({{site.url}}/assets/friend/2_ollama.png)
 
 Interestingly, it's not as good at following the direction to repeat itself as the smaller model.  There's lots of potential reasons for that, but generally LLM generation can be a bit hard to control.  I'll aim to explore that in a later post.
 
@@ -69,17 +67,13 @@ Luckily for us, the repo already has a [working example in Google Collab](https:
 
 You can dig into the code a bit there, a lot of it is pretty straightforward.  When you run the cell, it will take some time to spin up, but eventually you'll get a link to the live application:
 
-| ![Gradio public URL link]({{site.url}}/assets/friend/2_gradiourl.png){:height="50%" width="50%"} |
-|--------------------------------------------------------------------------------------------------------------------------| 
-| Gradio public URL link   
+[![Gradio public URL link]({{site.url}}/assets/friend/2_gradiourl.png){:height="50%" width="50%"}]({{site.url}}/assets/friend/2_gradiourl.png)
 
 Note - this is PUBLIC! So not secured, this is fine for messing around, but don't put anything sensitive in here.
 
 The tab that will open when you access the link should be named "Chat" and the interface should look very familiar if you've toyed with a chatbot before.  Our conversation proceeds as expected:
 
-| ![Gradio chat]({{site.url}}/assets/friend/2_gradiochat.png){:height="50%" width="50%"} |
-|--------------------------------------------------------------------------------------------------------------------------| 
-| Gradio chat 
+[![Gradio chat]({{site.url}}/assets/friend/2_gradiochat.png){:height="50%" width="50%"}]({{site.url}}/assets/friend/2_gradiochat.png)
 
 Again it doesn't exactly follow directions when asked to repeat itself.  But, it still seems to demonstrate it has contextual information (i.e. "memory).  The memory capability is implemented as a element of [Gradio state](https://www.gradio.app/docs/state) for the user's session.  I'm not 100% how that works - I don't have a lot of experience with Gradio.  But it provides functionality for maintaining things like the history of the conversation.
 
@@ -109,9 +103,7 @@ One last interesting tool I want to introduce you to is LlamaBot, developed by m
 
 LlamaBot supports both OpenAI and Ollama, leveraging LangChain for the chatbot "structure", but with its own dressing to enable consistent syntax.  In this notebook we essentially repeat the same setup as with the other tools.  You'll see that LlamaBot has its own ChatBot class, which maintains a history as a list of input and output.  We also are required to provide it with a "character", which I adapted from the default Oobabooga assistant.  Try it out in the [notebook](https://colab.research.google.com/drive/1v9UoeJlcSHaz1bJdWsZA-AAJAyVhJvna?usp=sharing).
 
-| ![LlamaBot chat]({{site.url}}/assets/friend/2_llamabot.png){:height="50%" width="50%"} |
-|--------------------------------------------------------------------------------------------------------------------------| 
-| LlamaBot chat 
+[![LlamaBot chat]({{site.url}}/assets/friend/2_llamabot.png){:height="50%" width="50%"}]({{site.url}}/assets/friend/2_llamabot.png)
 
 You'd imagine the response would be the same as with Ollama's own chatbot setup, but there's a different set of parameters provided by default here.  However, we still see it demonstrating some kind of "memory".  The stack looks something like this:
 
@@ -151,4 +143,4 @@ These are useful, but also they, I think, capture the differences between the to
 
 One thing I want to point out - I recognize that the input and ouput components of all the tools I listed are basically the same.  But that is not ALWAYS the case.  When does it vary? Well, maybe your want to augment your input with something you retrieved from elsewhere.  Some kind of Retrieval Augmented Generation.
 
-Tune in next time for part 3 - RAGs to riches.  It's probably the pun I'm most proud of.
+Tune in next time for part 3 - RAGs to riches.  It's probably the best pun of the series.

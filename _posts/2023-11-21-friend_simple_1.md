@@ -68,15 +68,11 @@ So let's add this as a component to make our LLM stack "conversational":
 
 In the case of ChatGPT it's memory is (maybe?) the Redis cache.  It may be helpful to look at a diagram of the workflow for an LLM application versus a "chatbot":
 
-| ![LLM Application]({{site.url}}/assets/friend/1_nomemory.png){:height="50%" width="50%"} |
-|--------------------------------------------------------------------------------------------------------------------------| 
-| LLM Application   
+[![]({{site.url}}/assets/friend/1_nomemory.png){:height="50%" width="50%"}]({{site.url}}/assets/friend/1_nomemory.png)
 
 This is a very basic workflow - there's no memory here, but there is the processing on both ends of the LLM.
 
-| ![LLM chatbot]({{site.url}}/assets/friend/1_memory.png){:height="50%" width="50%"} |
-|--------------------------------------------------------------------------------------------------------------------------| 
-| LLM chatbot   
+[![]({{site.url}}/assets/friend/1_memory.png){:height="50%" width="50%"}]({{site.url}}/assets/friend/1_memory.png)
 
 Now, with memory included, we have memory provided to the input processing (i.e. memory retrieval) and memory as a recipient of the output (i.e. memory storage).
 
