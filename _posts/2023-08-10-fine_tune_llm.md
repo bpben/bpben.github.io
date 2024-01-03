@@ -1,6 +1,10 @@
 ---
 layout: post
 title: The Embiggening of NLP - Part 3 - Fine-tuning
+author: ben
+categories: [ LLM Intro Series, LLM, tutorials ]
+image: assets/llms/friend_terminator.png
+tags: [featured]
 ---
 
 In the last two posts, I talked about [language models](https://bpben.github.io/2023/07/20/intro_llm/) and some reasons people are saying that [size matters](https://bpben.github.io/2023/07/27/large_llm/).  The last part of this I want to cover is something I feel is often missing from media coverage of this new era.

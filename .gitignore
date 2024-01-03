@@ -7,3 +7,7 @@ img/Thumbs.db
 node_modules
 .sass-cache
 .ruby-version
+.sass-cache
+.jekyll-metadata
+node_modules
+Gemfile.lock

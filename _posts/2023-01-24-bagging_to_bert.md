@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Bagging to BERT tutorial
+author: ben
+categories: [ Bagging to BERT, NLP, tutorials ]
 ---
 
 Well, it's official.  I'm bad at blogging.

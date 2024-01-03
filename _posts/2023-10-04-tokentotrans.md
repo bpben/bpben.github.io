@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Tokens to Transformers: An update to Bagging to BERT"
+author: ben
+categories: [ Bagging to BERT, NLP, tutorials ]
+image: assets/vocab_train.png
 ---
 
 I swear, I'm still here! The past few weeks have been a bit of madness with job transition, travel, etc.

@@ -1,6 +1,10 @@
 ---
 layout: post
 title: LLM Apps Part 1 - Coding from scratch
+author: ben
+categories: [ LLM App Series, LLM, tutorials ]
+image: assets/images/20231121.png
+tags: [featured]
 ---
 
 Good news everyone! I'm going to be presenting again at ODSC East! This time I'm going to shift focus and really dig into Large Language Models (LLMs).  Partly because everyone else is doing it and partly because I need a good motivator to really get myself familiar with the actual standing up of these systems.

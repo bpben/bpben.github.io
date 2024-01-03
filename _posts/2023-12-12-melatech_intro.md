@@ -1,6 +1,8 @@
 ---
 layout: post
 title: LLM technology for dermatology
+categories: [ Dermatology, research ]
+image: assets/images/20231212.png
 ---
 
 One of the projects I've been working on recently has been with a startup named [Melatech](https://melatech.io/), which aims to develop AI-assisted workflows for clinical training and management.  One of the areas they're particularly focused on is dermatology.  As with everything else during the pandemic, there was a [transition to digital spaces in dermatology services](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8832130/).  This means that more dermatologists are operating in an "asynchronous" mode; providing consultations on request by primary care physicians.  This increases the need for tools that streamline the e-consult workflow.

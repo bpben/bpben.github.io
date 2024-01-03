@@ -1,50 +1,51 @@
-# Ink
+# Jekyll Theme - Mundana by WowThemes.net
 
-Ink is a minmal two-column theme for [Jekyll](http://jekyllrb.com) 
+[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/) &nbsp; | &nbsp; 
+[Download](https://github.com/wowthemesnet/mundana-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; 
+[Buy me a coffe](https://www.wowthemes.net/donate/) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/mundana-theme-jekyll/) &nbsp; | &nbsp; 
+[WordPress version](https://www.wowthemes.net/themes/mundana-wordpress/) 
 
-![Screenshot](https://s32.postimg.org/gdtp6pw1x/ink.png)
+![mundana jekyll theme screenshot](assets/images/screenshot.jpg)
 
-# Installation 
+### Documentation
 
-##### Setup on your local machine
- * Clone or download the repository
- * You should have [ruby](https://www.ruby-lang.org/en/) installed in your system
- * Install bundler which helps in specifying and installing dependencies of any Ruby project ```gem install bundler```
- * Go to the root of the repo and run this - ```bundle install```
- * Then - ```c```
+[How to install & use](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/)
 
-##### Make it your own
- * Fork the repository
- * Follow the configuration step
- * Host your site/blog with **Ink**
+### Contribute to Mundana repository
 
-# Configuration 
- * Change the following in ```_config.yml```
- ```
-    name:               "Ink"
-    description:        "A minimalistic jekyll theme for humans"
-    url:                ""
-    author:             "thinker3197"
-    email:              "jhondoe@abc.com"
-    gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
-    twitter:            "jhondoe"
-    email:              "jhondoe@abc.com"
-    github:             "jhondoe"
-    pinterest:          "jhondoe"
-    linkedin:           "jhondoe"
-    facebook:           "jhondoe"
-    
- ```
- * Set the number of posts that appear in each page by changing the ```paginate``` option in ```_config.yml``` file. Default value is 5.
- * Add more navigation menus in the ```nav``` section in ```_config.yml```. 
- * Add your custom url in ```url``` option. Example : http://thinker3197.github.io/blog. Consult the ```gh-pages``` branch to see the basic setup for a blog.
- * Add your custom background by adding a custom background link in the ```background``` option in ```_config.yml```.
- 
-# Licensce
+1. In the top-right corner of this page, click **Fork**.
 
-Open sourced under [MIT LICENSE](https://github.com/thinker3197/ink/blob/master/LICENSE) 
+2. Clone a copy of your fork on your local, replacing *YOUR-USERNAME* with your Github username.
+
+   `git clone https://github.com/YOUR-USERNAME/mundana-theme-jekyll.git`
+
+3. **Create a branch**: 
+
+   `git checkout -b <my-new-feature-or-fix>`
+
+4. **Make necessary changes and commit those changes**:
+
+   `git add .`
+
+   `git commit -m "new feature or fix"`
+
+5. **Push changes**, replacing `<add-your-branch-name>` with the name of the branch you created earlier at step #3. :
+
+   `git push origin <add-your-branch-name>`
+
+6. Submit your changes for review. Go to your repository on GitHub, you'll see a **Compare & pull request** button. Click on that button. Now submit the pull request.
+
+That's it! Soon I'll be merging your changes into the master branch of this project. You will get a notification email once the changes have been merged. Thank you for your contribution.
 
 
+### Copyright
 
+Copyright (C) 2019 WowThemes.net.
 
+Theme designed and developed by [Sal](https://www.wowthemes.net), *free* under MIT license. 
 
+<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
+### Live Demo
+
+[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/)

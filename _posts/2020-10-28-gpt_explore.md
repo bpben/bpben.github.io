@@ -1,6 +1,9 @@
 ---
 layout: post
 title: GPT-Who? Exploring the history of GPT
+author: ben
+categories: [ LLM, articles ]
+image: assets/gpt_explore/transformer.png
 ---
 
 I’m not sure if this confused anyone else, but each time I hear of the “new” GPT, I wonder, what exactly is “new” about it? I know, generally, it utilizes some version of the [transformer](https://arxiv.org/abs/1706.03762) architecture, but that’s about it.  

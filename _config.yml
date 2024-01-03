@@ -1,14 +1,8 @@
 name:               "Ben Batorsky"
 description:        "Data Scientist and nice guy"
-
-url:                ""
 author:             "bpben"
-email:              "yksrotab@gmail.com"
-gravatar_hash:      ""
 twitter:            "bpben2"
-email:              "yksrotab@gmail.com"
-github:             "bpben"
-linkedin:           "benjamin-batorsky-1b883b27"
+email:              "benbatorsky@gmail.com"
 
 disqus_shortname:   ""
 
@@ -20,28 +14,56 @@ paginate_path:      "/page:num/"
 baseurl:            ""
 permalink:          /:year/:month/:day/:title/
 
-markdown:           kramdown
-
-nav:
-  - name:           "About"
-    href:           "/about"
-
-sass:
-  style:            :compressed
-
-defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
-
 gems:
   - jekyll-paginate
+
+logo: 'assets/images/favicon.png'
+favicon: 'assets/images/favicon.ico'
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+    ben:
+      name:           Ben
+      site:           https://www.benbatorsky.com
+      avatar:         me.png
+      bio:            "I am the type of person who appreciates the telling of a great story.  
+      As a data scientist, I am interested in using AI to understand, explore and communicate across borders and boundaries.  
+      My focus is on Natural Language Processing and the amazing ways it can help us understand each other and our world.  
+      The material on this blog is meant to share my experiences and understandings of complex technologies in a simple way, focused on application."
+      email:          benbatorsky@gmail.com
+      twitter:        https://twitter.com/bpben2
+      github:             http://github.com/bpben
+      linkedin:           http://linkedin.com/in/benjamin-batorsky-1b883b27
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: ben
+      avatar: me.png
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
