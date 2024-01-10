@@ -14,9 +14,6 @@ paginate_path:      "/page:num/"
 baseurl:            ""
 permalink:          /:year/:month/:day/:title/
 
-gems:
-  - jekyll-paginate
-
 logo: 'assets/images/favicon.png'
 favicon: 'assets/images/favicon.ico'
 
