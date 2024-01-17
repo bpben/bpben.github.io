@@ -62,6 +62,12 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
+img + em {
+  text-align: center;
+  font-size: .8rem;
+  color: rgb(172, 165, 165);
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", "Helvetica Neue", "Arial";
