@@ -19,9 +19,7 @@ One of the concepts I touched on in the [last post](https://bpben.github.io/2023
 
 The Google paper called their new model Fine-tuned Language Net, or FLAN.  It was trained on a variety of NLP challenge questions formatted as prompt-response pairs.  You can see pretty clearly the difference training the model on these instruction datasets makes:
 
-| ![PaLM model with and without instruction fine-tuning]({{site.url}}/assets/llms/instruct_tuned.png){:height="30%" width="30%"} |
-|--------------------------------------------------------------------------------------------------------------------------------| 
-| PaLM model with and without instruction fine-tuning [source](https://arxiv.org/abs/2210.11416)   |
+[![]({{site.url}}/assets/llms/instruct_tuned.png){:height="50%" width="50%"}]({{site.url}}/assets/llms/instruct_tuned.png)[source](https://arxiv.org/abs/2210.11416)
 
 While the PaLM model produces sensible expressions, they're not helpful responses.  That's basically where we were before ChatGPT; we could generate coherent passages, but that's of pretty limited utility.  The fine-tuned PaLM model (Flan-PaLM) produces much more useful responses.
 
@@ -29,15 +27,11 @@ This is typically called "instruction fine-tuning", since you're fine-tuning the
 
 So since the FLAN model understands instructions, we can basically rely on it for everything now.  I wonder if I can ask it for medical advice?
 
-| ![FLAN is a medical expert]({{site.url}}/assets/llms/align_flan.png){:height="20%" width="20%"} |
-|-------------------------------------------------------------------------------------------------| 
-| FLAN is a medical expert [source](https://huggingface.co/google/flan-t5-base)                   |
+[![]({{site.url}}/assets/llms/align_flan.png){:height="50%" width="50%"}]({{site.url}}/assets/llms/align_flan.png)[source](https://huggingface.co/google/flan-t5-base)                   |
 
 That's great, seems like ChatGPT isn't so confident.
 
-| ![ChatGPT is no fun]({{site.url}}/assets/llms/align_gpt.png){:height="30%" width="30%"} |
-|-----------------------------------------------------------------------------------------| 
-| ChatGPT is no fun                                                                       |
+[![]({{site.url}}/assets/llms/align_gpt.png){:height="50%" width="50%"}]({{site.url}}/assets/llms/align_gpt.png)
 
 What's interesting is that ChatGPT seems to be aware of its limitations, where as FLAN will basically tell you it's an expert in everything.  This is (at least in part) due a process called "alignment tuning".
 
@@ -51,9 +45,7 @@ This is the motivation behind the second innovation that brought us from the pre
 
 The term alignment comes from a [general discussion](https://arxiv.org/abs/1606.06565) about designing AI in accordance with human values.  It's not exactly a [new concern](https://timeline.com/robots-have-been-about-to-take-all-the-jobs-for-more-than-200-years-5c9c08a2f41d)
 
-| ![Hi there]({{site.url}}/assets/llms/friend_terminator.png){:height="10%" width="10%"} |
-|----------------------------------------------------------------------------------------| 
-| Hi Skynet!                                                                             |
+[![]({{site.url}}/assets/llms/friend_terminator.png){:height="50%" width="50%"}]({{site.url}}/assets/llms/friend_terminator.png)
 
 Applied to this context, it means steering a language model to produce responses that are:
 
@@ -84,9 +76,7 @@ This new era of NLP has been kind of insane.  I have an old presentation where I
 
 And now it looks like this:
 
-| ![Transformer timeline. On the vertical axis, number of parameters. Colors describe Transformer family]({{site.url}}/assets/llms/llm_timeline.png){:height="60%" width="60%"} |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
-| Transformer timeline. On the vertical axis, number of parameters. Colors describe Transformer family [source](https://arxiv.org/abs/2302.07730)                               | 
+[![]({{site.url}}/assets/llms/llm_timeline.png){:height="50%" width="50%"}]({{site.url}}/assets/llms/llm_timeline.png)[source](https://arxiv.org/abs/2302.07730)
 
 And even this isn't up to date! We're daily seeing fascinating advancements like [running LLMs on your CPU](https://github.com/ggerganov/llama.cpp), [towns made of AI](https://techcrunch.com/2023/04/10/researchers-populated-a-tiny-virtual-town-with-ai-and-it-was-very-wholesome/) and [models learning to use tools](https://arxiv.org/abs/2307.16789v1).
 
