@@ -70,6 +70,7 @@ In the case of ChatGPT it's memory is (maybe?) the Redis cache.  It may be helpf
 
 [![]({{site.url}}/assets/friend/1_nomemory.png){:height="50%" width="50%"}]({{site.url}}/assets/friend/1_nomemory.png)
 
+
 This is a very basic workflow - there's no memory here, but there is the processing on both ends of the LLM.
 
 [![]({{site.url}}/assets/friend/1_memory.png){:height="50%" width="50%"}]({{site.url}}/assets/friend/1_memory.png)
