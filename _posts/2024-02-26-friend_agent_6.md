@@ -176,6 +176,7 @@ But can you hand all your customers off to your LangChain agent? Um, [probably n
 I realized all my kvetching about brittleness and the simplicity of this example implementation might lead to you believe agents aren't all that impressive.  So I'd like to round out this post with a couple pretty incredible examples of LLM-powered agents.
 
 [Voyager](https://voyager.minedojo.org/)
+
 Voyager answers one of the most pressing questions of our time; can AI beat Minecraft?  
 
 The answer, it seems like, is yes! Minecraft poses a particularly difficult challenge since beating the game requires a series of complex actions, each with their own material components that can only be obtained through purposeful exploration of the game environment.
@@ -188,6 +189,7 @@ Rather than building on monolithic "solver" model, the developers assembled a sy
 This whole system is built on top of some carefully designed prompts and customized workflows, but there is no explicit fine-tuning happening here.  The model just knows it has a set of tasks to do and can understand when its actions have made progress and when they have failed.
 
 [ChatDev](https://github.com/OpenBMB/ChatDev)
+
 ChatDev takes things to the next level by having a "community" of agents interacting with one another.  Each agent has a particular "role", which means they have particular tasks they can execute and tools to which they have access.  The product of one agent can then be interacted with by another agent and so on.  What's really amazing here is that there are workflows around "collaboration".  That means one agent may check another's work, provide feedback and then that feedback can be incorporated in the next iteration.
 
 The result? These communities can actually develop things like a [website or a simple game](https://github.com/OpenBMB/ChatDev/blob/main/Contribution.md)!
@@ -198,7 +200,7 @@ Both of these examples are pretty neat experiments and I'm excited to see what c
 Let's sum up what we've covered here:
 - LLM agents are made up of several components: Planning, memory and tools
   - These components allow the LLM to answer complex requests with multi-hop workflows
-- Using LangChaing and GPT3.5 we were able to implement a simple workflow for recommending local events
+- Using LangChain and GPT3.5 we were able to implement a simple workflow for recommending local events
 - These agents can do very impressive things, but they require carefully engineered prompts and support systems (e.g. parsers)
 
 I think this is a really interesting area, but I still think there is a lot of work that needs to be done to make these reliable enough for the real world.  In general, even specialized LLM workflows have a lot ways they can go wrong.  Creating a generalized LLM workflow seems, to me, trading a lot of reliability and transparency for potentially more flexibility. 
