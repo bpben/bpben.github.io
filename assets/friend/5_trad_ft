@@ -1,0 +1,14 @@
+// Corpus and Documents
+digraph {
+	rankdir=BT
+	pw [label=<Pretrained Weights <BR/>  <I>W</I>> color=gray82 height=1.5 shape=box style=filled]
+	wu [label=<Weight Update <BR/>  &#916;<I>W</I>> color="#7dcea0" height=1.5 shape=box style=filled]
+	"+" [shape=circle]
+	h [label=< <I>h</I> > shape=circle]
+	x -> pw
+	x -> wu
+	wu -> "+"
+	pw -> "+"
+	"+" -> h
+	label=<<B>Traditional fine-tuning</B> <BR/> &#916;W: changes to weights <BR/> <I>h</I>: layer output>
+}

@@ -1,0 +1,18 @@
+digraph {
+	label="Conversational LLM application" rankdir=LR
+	user [label=User]
+	frontend [label=Frontend shape=box]
+	input_processor [label="Input processor" shape=box]
+	model [label=LLM shape=box]
+	memory [label=Memory shape=box]
+	output_processor [label="Output processor" shape=box]
+	user -> frontend
+	frontend -> input_processor
+	input_processor -> model
+	input_processor -> memory
+	memory -> input_processor
+	model -> output_processor
+	output_processor -> memory
+	output_processor -> frontend
+	frontend -> user
+}
