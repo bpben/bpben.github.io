@@ -3,6 +3,7 @@ layout: post
 title: Fine-tuning ChatGPT for Dermatology
 categories: [ Dermatology, tutorial, LLM ]
 image: assets/images/20240124.png
+tags: []
 ---
 
 The main goal of my project with dermatology tech startup [Melatech](https://melatech.io/) is to build a prototype clinical note generation engine.  The notes generated need to have the following qualities:
