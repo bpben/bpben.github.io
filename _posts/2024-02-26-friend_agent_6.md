@@ -4,7 +4,7 @@ title: LLM Apps Part 6 - Call my LLM agent!
 author: ben
 categories: [ "LLM App Series", LLM, tutorials ]
 image: assets/images/20240226.png
-tags: [sticky]
+tags: []
 ---
 
 We've explored how to make our LLM applications conversational, relevant and personalized, but now it's time to put them to work.  
