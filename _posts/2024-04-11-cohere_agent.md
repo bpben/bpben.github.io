@@ -21,7 +21,7 @@ Hot on the heels of Command-R was this month's release of [Command-R+](https://t
 
 Cohere's own comparison versus Mistral and GPT-4:
 
-[![]({{site.url}}/assets/20240411_cohere_compare.png){:height="50%" width="50%"}]({{site.url}}/assets/20240411_cohere_compare.png)
+[![]({{site.url}}/assets/20240411_cohere_compare.png){:height="75%" width="75%"}]({{site.url}}/assets/20240411_cohere_compare.png)
 
 But don't take their word for it - it's now the first open weight model to beat GPT-4 on [LMSys' chatbot leaderboard](https://chat.lmsys.org/?leaderboard)!
 
