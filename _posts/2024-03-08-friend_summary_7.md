@@ -4,7 +4,7 @@ title: LLM Apps Part 7 - Looking ahead
 author: ben
 categories: [ "LLM App Series", LLM, tutorials ]
 image: assets/images/20240308.png
-tags: [featured]
+tags: []
 ---
 
 We've come to the end of my [LLM app series]({{site.url}}/categories.html#llm-app-series) (for now).  I really enjoyed putting this together and I will be working in the coming weeks on expanding some of these sections.  I'm looking ahead to [my tutorial at ODSC](https://odsc.com/speakers/ben-needs-a-friend-an-intro-to-building-large-language-model-applications/), where I'll be covering these and other topics.  The materials will be made available as I put them together, so keep an eye on this blog and [this repo](https://github.com/bpben/ben_friend) for that!
