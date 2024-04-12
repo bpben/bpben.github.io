@@ -7,7 +7,7 @@ image: assets/images/20240411.png
 tags: []
 ---
 
-This month superstar LLM startup Cohere released their [Command-R+ model](https://txt.cohere.com/command-r-plus-microsoft-azure/).  I experimented with this model to create a function (and free!) agent workflow to look up local events.
+This month superstar LLM startup Cohere released their [Command-R+ model](https://txt.cohere.com/command-r-plus-microsoft-azure/).  I experimented with this model to create a functional (and free!) agent workflow to look up local events.
 
 What is Command-R+? Interestingly enough, that's the name of the next section.
 
