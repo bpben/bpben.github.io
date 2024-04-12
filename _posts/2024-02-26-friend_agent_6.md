@@ -35,7 +35,7 @@ There's been a recent drawing together of the fields of RL and NLP with the popu
 Typically, when people talk about LLMs as agents, they're focused on their ability to do complex tasks like [designing chemicals Wikipedia articles](https://arxiv.org/abs/2304.05376) or [beating Minecraft](https://voyager.minedojo.org/).  In the RLHF diagram above, we see the LLM agent's action space consists of the tokens it can generate.  That's fine if the task requires generating text, but what about conducting a web search or even looking up today's date? In the words of a colleague of mine, the language is the "glue" connecting the system's components.  The LLM specifies the tools to use, how to use them and then uses their output to generate a useful response.
 
 An LLM agent typically contains the following components:
-- Planning - Plans and verifies the steps towards resolving a tasjk
+- Planning - Plans and verifies the steps towards resolving a task
 - Memory - Stores the "state" of the conversation, steps processed, etc.
 - Tools - The capabilities that the LLM can use (e.g. calculator, web search)
 
