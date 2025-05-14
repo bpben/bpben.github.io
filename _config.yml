@@ -26,7 +26,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-spaceship
   
 authors:
     ben:

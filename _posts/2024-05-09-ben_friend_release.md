@@ -3,7 +3,7 @@ layout: post
 title: Ben Needs a Friend tutorial release
 author: ben
 image: assets/images/20240509.jpg
-tags: [sticky]
+tags: []
 categories: [ LLM, tutorials ]
 ---
 
